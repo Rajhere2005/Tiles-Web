@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Shopping Cart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <!-- Logo -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-center">
+        <span class="navbar-brand mb-0 h1 fs-1" style="font-family: 'Segoe UI'">Logo</span>
+      </div>
+    </nav>
+
+    <!-- Navigation Links -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">SPACES</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">PRODUCTS</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">SHOWROOMS</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">COMPANY</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">MEDIA</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="d-flex gap-3">
+          <i class="bi bi-search d-none d-lg-block"></i>
+          <i class="bi bi-cart"></i>
+          <i class="bi bi-suit-heart"></i>
+          <i class="bi bi-person"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shopping Cart Header -->
+    <section class="container-fluid p-5">
+      <h2 class="fw-bold">Shopping Cart</h2>
+      <p class="fw-bold text-primary">&larr; Continue Shopping</p>
+    </section>
+
+    <!-- Shopping Cart Items and Summary -->
+    <section class="container-fluid px-3 px-lg-5">
+      <div class="row gy-4">
+        <!-- Product List -->
+        <div class="col-12 col-lg-8">
+          <div class="row d-none d-md-flex fw-bold text-center mb-3">
+            <div class="col-md-4">Product</div>
+            <div class="col-md-2">Unit Price</div>
+            <div class="col-md-2">Qty</div>
+            <div class="col-md-2">Total</div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <!-- Repeat Product Row -->
+          <!-- Product Start -->
+          <div class="row align-items-center py-3 border-bottom">
+            <div class="col-12 col-md-4 d-flex gap-3">
+              <img src="./assets4/Mask group (12).png" class="img-fluid" style="max-width: 80px" />
+              <div class="d-flex flex-column justify-content-center">
+                <p class="m-0 fw-bold">Product Name</p>
+                <p class="m-0 text-muted">Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">199.00</div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="d-flex justify-content-center gap-2">
+                <button class="btn btn-sm btn-outline-dark">-</button>
+                <span class="px-2">1</span>
+                <button class="btn btn-sm btn-outline-dark">+</button>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">199.99</div>
+            <div class="col-6 col-md-2 text-end d-none d-md-block"></div>
+          </div>
+          <div class="row align-items-center py-3 border-bottom">
+            <div class="col-12 col-md-4 d-flex gap-3">
+              <img src="./assets4/Mask group (12).png" class="img-fluid" style="max-width: 80px" />
+              <div class="d-flex flex-column justify-content-center">
+                <p class="m-0 fw-bold">Product Name</p>
+                <p class="m-0 text-muted">Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">199.00</div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="d-flex justify-content-center gap-2">
+                <button class="btn btn-sm btn-outline-dark">-</button>
+                <span class="px-2">1</span>
+                <button class="btn btn-sm btn-outline-dark">+</button>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">199.99</div>
+            <div class="col-6 col-md-2 text-end d-none d-md-block"></div>
+          </div>
+          <div class="row align-items-center py-3 border-bottom">
+            <div class="col-12 col-md-4 d-flex gap-3">
+              <img src="./assets4/Mask group (12).png" class="img-fluid" style="max-width: 80px" />
+              <div class="d-flex flex-column justify-content-center">
+                <p class="m-0 fw-bold">Product Name</p>
+                <p class="m-0 text-muted">Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">199.00</div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="d-flex justify-content-center gap-2">
+                <button class="btn btn-sm btn-outline-dark">-</button>
+                <span class="px-2">1</span>
+                <button class="btn btn-sm btn-outline-dark">+</button>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">199.99</div>
+            <div class="col-6 col-md-2 text-end d-none d-md-block"></div>
+          </div>
+          <!-- Product End -->
+
+          <!-- Duplicate rows as needed for more products -->
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="col-12 col-lg-4">
+          <div class="bg-light p-4 shadow-sm rounded">
+            <p class="fw-bold">
+              Have a voucher? <span class="text-muted small">(Optional)</span>
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <input type="text" class="form-control" placeholder="Enter code" />
+              <button class="btn btn-dark">Redeem</button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <span class="fs-5">Subtotal</span>
+              <span>138.00 SAR</span>
+            </div>
+            <div class="d-flex justify-content-between text-muted">
+              <span>Shipping</span>
+              <span>5.91 SAR</span>
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+              <div>
+                <span class="fs-5">Total</span>
+                <div class="text-muted small">VAT included</div>
+              </div>
+              <span class="fs-5 fw-bold">143.91 SAR</span>
+            </div>
+            <button class="btn btn-dark w-100 mt-3">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Viewed Products -->
+    <section class="container-fluid p-5">
+      <h2 class="text-center">Recently Viewed Products</h2>
+      
+      <div class="row g-4 mt-3">
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/11 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Windsor White Oak</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/10 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Sicily Grey Decor 60x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/9 61.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Sardina White Oak</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/8 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Siciley Grey 30x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4 p-lg-5">
+      <div class="row">
+        <div class="col-lg-5 mb-4">
+          <h1 class="fw-bold fs-1" style="font-family: 'Trebuchet MS'">Logo</h1>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-md-4 col-6 mb-4">
+              <h5 class="fw-bold">Products</h5>
+              <a href="#" class="d-block text-secondary">Stand Stone</a>
+              <a href="#" class="d-block text-secondary">Stone</a>
+              <a href="#" class="d-block text-secondary">Cement</a>
+              <a href="#" class="d-block text-secondary">Soft Stone</a>
+            </div>
+            <div class="col-md-4 col-6 mb-4">
+              <h5 class="fw-bold">Services</h5>
+              <a href="#" class="d-block text-secondary">Measurement</a>
+              <a href="#" class="d-block text-secondary">Advice</a>
+              <a href="#" class="d-block text-secondary">Design</a>
+            </div>
+            <div class="col-md-4 col-12 mb-4">
+              <h5 class="fw-bold">Contact</h5>
+              <p class="text-white mb-0">
+                3181 Al Imam Saud Ibn Abdul Branch Road<br />
+                An Nuzhah, Riyadh 12477, Saudi Arabia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

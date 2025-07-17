@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive E-Commerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .mainimage {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("/Assets2/image 11.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 75vh;
+      }
+
+      .parallelogram {
+        transform: skew(-10deg);
+        overflow: hidden;
+      }
+
+      .bg-box {
+        background-color: whitesmoke;
+        height: auto;
+        padding: 2rem;
+      }
+
+      .image-box {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-box img {
+        transform: skew(10deg); /* reverse the skew */
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 768px) {
+        .parallelogram {
+          transform: none !important;
+        }
+
+        .bg-box {
+          text-align: center;
+        }
+
+        .mainimage {
+          height: 50vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Brand -->
+    <nav class="navbar bg-body-tertiary">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-center"
+      >
+        <span class="navbar-brand mb-0 h1 fs-1" style="font-family: 'Segoe UI'"
+          >Logo</span
+        >
+      </div>
+    </nav>
+
+    <!-- Navigation Links -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">SPACES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#"
+                >PRODUCT AND SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">SHOWROOMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">COMPANY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">MEDIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex gap-3">
+          <i class="bi bi-search d-none d-lg-block"></i>
+          <i class="bi bi-cart"></i>
+          <i class="bi bi-suit-heart"></i>
+          <i class="bi bi-person"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mainimage d-flex align-items-center p-5">
+      <div class="text-white">
+        <h1>CATALOG</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis
+          blanditiis fuga perspiciatis animi sapiente?
+        </p>
+      </div>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section class="container-fluid py-5">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <img
+            src="./Assets2/floor-designs-49.png"
+            alt=""
+            class="img-fluid w-100"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./Assets2/d0ccfb17adf39fcb64db520f31ad3e66.png"
+            alt=""
+            class="img-fluid w-100"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./Assets2/download (3).png"
+            alt=""
+            class="img-fluid w-100"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./Assets2/floor-designs-49.png"
+            alt=""
+            class="img-fluid w-100"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Cards Section -->
+    <section
+      class="container-fluid p-3 p-lg-5"
+      style="background-color: rgba(240, 255, 255, 0.3)"
+    >
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/14 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Zurich Vision 60x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/13 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Zurich Pearl 60x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/12 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Zurich Grey 60x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/15 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Zurich Vision 60x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/11 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Windsor White Oak</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/10 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Sicily Grey Decor 60x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/9 61.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Sardina White Oak</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <img class="img-fluid w-100" src="./Asses/8 1.png" alt="" />
+          <div
+            class="text-center py-3"
+            style="background-color: rgba(230, 233, 235, 0.7)"
+          >
+            <h5 class="m-0">Siciley Grey 30x60</h5>
+            <p class="m-0">
+              <span class="text-decoration-line-through text-secondary"
+                >449.90SR</span
+              >
+              239.99SAR
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5">
+        <button class="btn btn-dark px-4 py-2">LOAD MORE</button>
+      </div>
+    </section>
+
+    <!-- Promotional Banner Section -->
+    <section class="container-fluid p-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-5 col-12 mb-4">
+          <div class="parallelogram bg-box text-dark">
+            <h2>Promotional Banner</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Excepturi, earum!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="parallelogram image-box">
+            <img src="./Asses/Mask group (8).png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4 p-lg-5">
+      <div class="row">
+        <div class="col-lg-5 col-12 mb-4">
+          <h1 class="fw-bold fs-1" style="font-family: 'Trebuchet MS'">Logo</h1>
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="row">
+            <div class="col-md-4 col-6 mb-4">
+              <a href="#" class="text-white fw-bold fs-5 d-block mb-2"
+                >Products</a
+              >
+              <a href="#" class="text-secondary d-block">Stand Stone</a>
+              <a href="#" class="text-secondary d-block">Stone</a>
+              <a href="#" class="text-secondary d-block">Cement</a>
+              <a href="#" class="text-secondary d-block">Soft Stone</a>
+            </div>
+            <div class="col-md-4 col-6 mb-4">
+              <a href="#" class="text-white fw-bold fs-5 d-block mb-2"
+                >Services</a
+              >
+              <a href="#" class="text-secondary d-block">Measurement Service</a>
+              <a href="#" class="text-secondary d-block">Product Advice</a>
+              <a href="#" class="text-secondary d-block">Interior Design</a>
+            </div>
+            <div class="col-md-4 col-12 mb-4">
+              <a href="#" class="text-white fw-bold fs-5 d-block mb-2"
+                >Contact</a
+              >
+              <p>
+                3181 Al Imam Saud Ibn Abdul Branch Road, An Nuzhah, Riyadh
+                12477, Saudi Arabia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
